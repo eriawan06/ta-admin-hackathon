@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  src: url(../../public/font/Inter/inter.ttf);
+  font-family: Inter;
+}
+
+* {
+  margin: 0;
+  font-family: 'Inter', sans-serif !important;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: rgb(229, 62, 62);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd !important;
+}
+
+.horizontal-scrollbar ::-webkit-scrollbar-track {
+  border-radius: 9999px !important;
+  background-color: #ddd;
+}
+
+.ant-breadcrumb > ol > li:first-child > * {
+  font-weight: 700;
+}
+
+.ant-breadcrumb > ol > li {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ant-breadcrumb > ol > li > span {
+  color: white;
+}
+
+.ant-breadcrumb-separator {
+  color: white !important;
+}
+
+/* Button */
+.custom-button-primary {
+  background-color: rgb(229, 62, 62);
+  color: white;
+}
+
+.custom-button-primary:hover {
+  background-color: rgb(229, 62, 62, 0.8) !important;
+  color: white !important;
+}
+
+.custom-button-primary-ghost {
+  background-color: transparent;
+  font-weight: bold;
+  color: rgb(229, 62, 62);
+  border: 1px solid rgb(229, 62, 62);
+}
+
+.custom-button-primary-ghost:hover {
+  background-color: rgb(229, 62, 62) !important;
+  color: white !important;
+}
+
+/* Sider */
+.ant-layout-sider {
+  width: 260px !important;
+  max-width: 260px !important;
+}
+
+.ant-menu {
+  background-color: black;
+  color: white;
+}
+
+.ant-menu-item:hover {
+  background-color: rgb(229, 62, 62, 0.8) !important;
+  color: white !important;
+}
+
+.ant-menu-item-selected {
+  background-color: rgb(229, 62, 62) !important;
+  color: white !important;
+}
+
+span.ant-menu-title-content {
+  padding-right: 30px;
+}
+
+/* Radio */
+.ant-radio-checked .ant-radio-inner {
+  border-color: #e70a09 !important;
+  border-width: 2px !important;
+}
+.ant-radio-checked .ant-radio-inner::after {
+  background-color: #e70a09 !important;
+}
+span .ant-radio-inner {
+  border-color: #afafaf !important;
+  background-color: #fff !important;
+}
+
+/* Radio Button */
+.ant-radio-button-wrapper-checked {
+  border-color: #e70a09 !important;
+  background-color: #e70a09 !important;
+}
+
+.ant-radio-button-wrapper-checked::before {
+  background-color: #e70a09 !important;
+}
+
+.ant-radio-button-wrapper:hover:not(.ant-radio-button-wrapper-checked) {
+  color: #e70a09 !important;
+}
+
+/* Upload */
+
+.ant-upload-wrapper {
+  display: flex;
+  width: 100% !important;
+  height: 100% !important;
+  @apply rounded-full;
+}
+
+.ant-upload {
+  display: flex;
+  width: 100% !important;
+  height: 100% !important;
+  @apply rounded-full;
+}
+
+/* Spin */
+
+.ant-spin-dot-item {
+  background-color: #e70a09 !important;
+}
